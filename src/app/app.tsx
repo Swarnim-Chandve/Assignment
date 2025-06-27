@@ -4,38 +4,53 @@ import Header from "../components/Header";
 import SectionTabs from "../components/SectionTabs";
 import Footer from "../components/Footer";
 import { inputs } from "./data.ts";
-// import { inputs2 } from "./data.ts";
-// import { inputs3 } from "./data.ts";
+import { inputs2 } from "./data.ts";
+import { inputs3 } from "./data.ts";
 
 function App() {
   return (
     //screen1
-    <div>
+    // <div>
   
-      <Header />
+    //   <Header />
 
     
-      <img src="/separator.svg" alt="Separator" className="w-full h-auto mt-2" />
+    //   <img src="/separator.svg" alt="Separator" className="w-full h-auto mt-2" />
 
   
-      <div className="mx-6 mt-6 h-[500px] border border-gray-300 rounded-lg shadow-lg overflow-hidden flex flex-col">
-
+    //   <div className="mx-6 mt-28 h-[500px] border border-gray-300 rounded-lg shadow-lg overflow-hidden flex flex-col">
+      
        
-        <SectionTabs />
+    //     <SectionTabs />
 
       
-        <div className="flex-[3] bg-white border-b border-gray-300 p-4 overflow-y-auto">
-          <div className="grid grid-cols-4 gap-4 ">
-            {inputs.map((input, i) => (
-              <CompanyInput key={i} {...input} />
-            ))}
-          </div>
-        </div>
+    //     <div className="flex-[3] bg-white border-b border-gray-300 p-4 overflow-y-auto">
+    //       <div className="grid grid-cols-4 gap-4 ">
+    //         {inputs.map((input, i) => (
+    //           <CompanyInput key={i} {...input} />
+    //         ))}
+    //       </div>
+    //     </div>
 
        
-        <Footer />
-      </div>
-    </div>
+    //     <Footer />
+    //   </div>
+    // </div>
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -48,13 +63,13 @@ function App() {
     //   <img src="/separator.svg" alt="Separator" className="w-full h-auto mt-2" />
 
     
-    //   <div className="mx-6 mt-6 h-[500px] border border-gray-300 rounded-lg shadow-lg overflow-hidden flex flex-col">
+    //   <div className="mx-6 mt-28 h-[500px] border border-gray-300 rounded-lg shadow-lg overflow-hidden flex flex-col">
 
     
     //     <SectionTabs />
 
     
-    //     <div className="flex-[3] bg-[#efedf2] border-b border-gray-300 p-4 overflow-y-scroll mt-4">
+    //     <div className="flex-[3] bg-[#efedf2] border-b border-gray-300 p-4 overflow-y-auto mt-4">
     //       <div className="grid grid-cols-4 gap-6">
     //         {inputs2.map((input, i) => (
     //           <CompanyInput key={i} {...input} />
@@ -75,40 +90,44 @@ function App() {
 
 
     //screen3 
-    // <div>
+     <div>
    
-    //   <Header />
+      <Header />
 
     
-    //   <img src="/separator.svg" alt="Separator" className="w-full h-auto mt-2" />
+      <img src="/separator.svg" alt="Separator" className="w-full h-auto mt-2" />
 
-    //   <div className="mx-6 mt-6 h-[500px] border border-gray-300 rounded-lg shadow-lg overflow-hidden flex flex-col">
+       <div className=" mx-6 mt-28 h-[500px] border border-gray-300 rounded-lg shadow-lg overflow-hidden flex flex-col ">
 
     
-    //     <SectionTabs />
+        <SectionTabs />
 
    
-    //     <div className="flex-[3] bg-[#efedf2] border-b border-gray-300 p-4 overflow-y-scroll">
+      <div className="flex-[3] bg-[#efedf2] border-b border-gray-300 p-4 overflow-y-auto">
 
-    //       <div className="grid grid-cols-4 gap-x-6 gap-y-6 px-6 pt-6 pb-2">
-    //         {inputs3.map((input, i) => (
-    //           <CompanyInput key={i} {...input} />
-    //         ))}
-    //       </div>
+          <div className="grid grid-cols-4 gap-x-6 gap-y-6 px-6 pt-6 pb-2">
+            {inputs3.map((input, i) => (
+              <CompanyInput key={i} {...input} />
+            ))}
+          </div>
 
 
-    //     </div>
+        </div>
 
-    //     <div className="bg-white border-b border-gray-300 px-6 py-6 ">
+        <div className="bg-white border-b border-gray-300 px-6 py-6 ">
 
-    //     </div>
+        </div>
 
    
-    //     <Footer />
-    //   </div>
-    // </div>
+         <Footer />
+       </div>
+    </div>
   );
 }
 
 export default App;
+
+
+
+
 

@@ -3,7 +3,7 @@ export default function SectionTabs() {
   return (
 
 <div className="flex-[0.5] bg-white border-b border-gray-300 px-6 py-3 flex items-center gap-6">
-      <h1 className="text-[#1C4ED9] text-xl font-semibold whitespace-nowrap">
+      <h1 className="text-[#1C4ED9] text-2xl font-notosans font-light  whitespace-nowrap">
         Company Registration
       </h1>
 
