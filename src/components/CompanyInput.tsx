@@ -16,7 +16,7 @@ const CompanyInput = ({ label, placeholder, type, dropdown, logo, required }: an
 
   return (
     <div className="flex flex-col">
-      <span className="text-xs text-[#1C4ED9] mb-1">
+      <span className="text-xs text-[#1C4ED9] mb-1 font-notosans font-light ">
         {label} {required && <span className="text-pink-500">*</span>}
       </span>
 
